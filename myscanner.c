@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <asacommon.h>
+#include "asacommon.h"
 
 extern int yylex();	// returns our next token	1,2,3... that corresponds to INTEGER, IDENTIFIER, etc.
 extern int yylineno;	// current line number that our scanner is in

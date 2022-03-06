@@ -18,7 +18,8 @@
 [-]?[0-9]+\.[0-9]+	return 11;
 [a-z]			return 12;
 [ \t\n]			;
-.*			printf("Syntax Error!");
+";"			return 13;
+.			printf("Syntax Error!");
 
 %%
 

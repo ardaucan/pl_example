@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 15
-#define YY_END_OF_BUFFER 16
+#define YY_NUM_RULES 16
+#define YY_END_OF_BUFFER 17
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -362,9 +362,9 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[30] =
     {   0,
-       14,   14,   16,   14,   13,   13,    3,    4,    7,    5,
-        6,    8,   10,    9,   14,   14,   12,   14,   10,   14,
-       14,   14,   11,   14,   14,    2,   14,    1,    0
+        0,    0,   17,   15,   13,   13,    3,    4,    7,    5,
+        6,    8,   10,   14,    9,   15,   15,   12,   10,    0,
+        0,    0,   11,    0,    0,    2,    0,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -374,15 +374,15 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    2,    1,    1,    1,    1,    1,    1,    1,    4,
         5,    6,    7,    1,    8,    9,   10,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,    1,    1,    1,
-       12,    1,    1,    1,    1,    1,    1,    1,   13,    1,
-        1,    1,   14,    1,    1,    1,    1,    1,    1,    1,
-        1,   15,    1,   16,    1,    1,   17,   18,    1,    1,
-        1,    1,    1,    1,    1,    1,   19,   19,   19,   19,
+       11,   11,   11,   11,   11,   11,   11,    1,   12,    1,
+       13,    1,    1,    1,    1,    1,    1,    1,   14,    1,
+        1,    1,   15,    1,    1,    1,    1,    1,    1,    1,
+        1,   16,    1,   17,    1,    1,   18,   19,    1,    1,
+        1,    1,    1,    1,    1,    1,   20,   20,   20,   20,
 
-       19,   19,   19,   19,   19,   19,   19,   19,   19,   19,
-       19,   19,   19,   19,   19,   19,   19,   19,   19,   19,
-       19,   19,    1,    1,    1,    1,    1,    1,    1,    1,
+       20,   20,   20,   20,   20,   20,   20,   20,   20,   20,
+       20,   20,   20,   20,   20,   20,   20,   20,   20,   20,
+       20,   20,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -399,44 +399,44 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[20] =
-    {   0,
-        1,    1,    2,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1
-    } ;
-
-static const flex_int16_t yy_base[31] =
-    {   0,
-        0,    0,   35,    0,    0,   36,    0,    0,    0,    0,
-       23,    0,   11,    0,   15,   17,    0,    0,   12,   20,
-       16,   15,   17,   11,   10,    0,   12,    0,   36,   23
-    } ;
-
-static const flex_int16_t yy_def[31] =
-    {   0,
-       29,    1,   29,   30,   30,   29,   30,   30,   30,   30,
-       30,   30,   30,   30,   30,   30,   30,   30,   30,   30,
-       30,   30,   30,   30,   30,   30,   30,   30,    0,   29
-    } ;
-
-static const flex_int16_t yy_nxt[56] =
-    {   0,
-        4,    5,    6,    7,    8,    9,   10,   11,    4,   12,
-       13,   14,   15,    4,    4,    4,   16,    4,   17,   20,
-       20,   19,   19,   18,   28,   27,   26,   23,   25,   24,
-       23,   22,   21,   19,   29,    3,   29,   29,   29,   29,
-       29,   29,   29,   29,   29,   29,   29,   29,   29,   29,
-       29,   29,   29,   29,   29
-    } ;
-
-static const flex_int16_t yy_chk[56] =
+static const YY_CHAR yy_meta[21] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,   13,
-       19,   13,   19,   30,   27,   25,   24,   23,   22,   21,
-       20,   16,   15,   11,    3,   29,   29,   29,   29,   29,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1
+    } ;
+
+static const flex_int16_t yy_base[30] =
+    {   0,
+        0,    0,   35,   36,   36,   36,   36,   36,   36,   36,
+       23,   36,   12,   36,   36,   14,   16,   36,   13,   20,
+       15,   14,   17,   10,    9,   36,   11,   36,   36
+    } ;
+
+static const flex_int16_t yy_def[30] =
+    {   0,
+       29,    1,   29,   29,   29,   29,   29,   29,   29,   29,
        29,   29,   29,   29,   29,   29,   29,   29,   29,   29,
-       29,   29,   29,   29,   29
+       29,   29,   29,   29,   29,   29,   29,   29,    0
+    } ;
+
+static const flex_int16_t yy_nxt[57] =
+    {   0,
+        4,    5,    6,    7,    8,    9,   10,   11,    4,   12,
+       13,   14,   15,   16,    4,    4,    4,   17,    4,   18,
+       20,   20,   19,   19,   28,   27,   26,   23,   25,   24,
+       23,   22,   21,   19,   29,    3,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29
+    } ;
+
+static const flex_int16_t yy_chk[57] =
+    {   0,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+       13,   19,   13,   19,   27,   25,   24,   23,   22,   21,
+       20,   17,   16,   11,    3,   29,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -455,7 +455,7 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "asa.l"
 #line 2 "asa.l"
-#include "mylangcommon.h"
+#include "asacommon.h"
 #line 460 "lex.yy.c"
 #line 461 "lex.yy.c"
 
@@ -803,14 +803,19 @@ YY_RULE_SETUP
 case 14:
 YY_RULE_SETUP
 #line 21 "asa.l"
-printf("Syntax Error!");
+return 13;
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 23 "asa.l"
+#line 22 "asa.l"
+printf("Syntax Error!");
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
+#line 24 "asa.l"
 ECHO;
 	YY_BREAK
-#line 814 "lex.yy.c"
+#line 819 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1815,7 +1820,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "asa.l"
+#line 24 "asa.l"
 
 
 int yywrap(void) {	
