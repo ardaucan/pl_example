@@ -1,5 +1,5 @@
 %{
-#include "mylangcommon.h"
+#include "asacommon.h"
 %}
 
 
