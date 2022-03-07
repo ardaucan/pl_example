@@ -737,62 +737,62 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 8 "asa.l"
-return 1;
+return 5;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 9 "asa.l"
-return 2;
+return 8;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 10 "asa.l"
-return 3;
+return 6;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 11 "asa.l"
-return 4;
+return 7;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 12 "asa.l"
-return 5;
+return 9;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
 #line 13 "asa.l"
-return 6;
+return 11;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 14 "asa.l"
-return 7;
+return 10;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 15 "asa.l"
-return 8;
+return 12;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 16 "asa.l"
-return 9;
+return 4;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
 #line 17 "asa.l"
-return 10;
+return 2;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
 #line 18 "asa.l"
-return 11;
+return 3;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
 #line 19 "asa.l"
-return 12;
+return 1;
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */

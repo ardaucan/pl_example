@@ -5,18 +5,18 @@
 
 %%
 
-"WRITE"			return 1;
-"EXIT"			return 2;
-"("			return 3;
-")"			return 4;
-"+"			return 5;
-"-"			return 6;
-"*"			return 7;
-"/"			return 8;
-"="			return 9;
-[-]?[0-9]+		return 10;
-[-]?[0-9]+\.[0-9]+	return 11;
-[a-z]			return 12;
+"WRITE"			return 5;
+"EXIT"			return 8;
+"("			return 6;
+")"			return 7;
+"+"			return 9;
+"-"			return 11;
+"*"			return 10;
+"/"			return 12;
+"="			return 4;
+[-]?[0-9]+		return 2;
+[-]?[0-9]+\.[0-9]+	return 3;
+[a-z]			return 1;
 [ \t\n]			;
 ";"			return 13;
 .			printf("Syntax Error!");
