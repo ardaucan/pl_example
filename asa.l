@@ -17,7 +17,8 @@
 [-]?[0-9]+		return 2;
 [-]?[0-9]+\.[0-9]+	return 3;
 [a-z]			return 1;
-[ \t\n]			;
+[ \t]			;
+"\n"			{yylineno++;}
 ";"			return 13;
 .			printf("Syntax Error!");
 

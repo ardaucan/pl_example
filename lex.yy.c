@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 16
-#define YY_END_OF_BUFFER 17
+#define YY_NUM_RULES 17
+#define YY_END_OF_BUFFER 18
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -362,8 +362,8 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[30] =
     {   0,
-        0,    0,   17,   15,   13,   13,    3,    4,    7,    5,
-        6,    8,   10,   14,    9,   15,   15,   12,   10,    0,
+        0,    0,   18,   16,   13,   14,    3,    4,    7,    5,
+        6,    8,   10,   15,    9,   16,   16,   12,   10,    0,
         0,    0,   11,    0,    0,    2,    0,    1,    0
     } ;
 
@@ -795,27 +795,32 @@ YY_RULE_SETUP
 return 1;
 	YY_BREAK
 case 13:
-/* rule 13 can match eol */
 YY_RULE_SETUP
 #line 20 "asa.l"
 ;
 	YY_BREAK
 case 14:
+/* rule 14 can match eol */
 YY_RULE_SETUP
 #line 21 "asa.l"
-return 13;
+{yylineno++;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
 #line 22 "asa.l"
-printf("Syntax Error!");
+return 13;
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 24 "asa.l"
+#line 23 "asa.l"
+printf("Syntax Error!");
+	YY_BREAK
+case 17:
+YY_RULE_SETUP
+#line 25 "asa.l"
 ECHO;
 	YY_BREAK
-#line 819 "lex.yy.c"
+#line 824 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1820,7 +1825,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 24 "asa.l"
+#line 25 "asa.l"
 
 
 int yywrap(void) {	

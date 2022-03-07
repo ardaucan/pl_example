@@ -11,7 +11,7 @@ DEFINETOKENS
 int main(void) {
 	int token = yylex();	// got next token
 	while(token) {
-		printf("%s\n", text[token]);	// prints the corresponding int value of the token
+		printf("Token %s is seen on line %d, value is %s\n", text[token], yylineno, yytext);
 		token = yylex();	// next token 
 	}
 	return 0;
